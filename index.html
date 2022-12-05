@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>SAFE CONTENT</title>
+  </head>
+
+  <body onload="onInit()">
+    <section class="login-section">
+      <h1>Log In!</h1>
+      <img src="/img/sing1-in.jpeg" class="sign-in-img" alt="" />
+
+      <div>
+        <h3>Username</h3>
+        <input
+          type="text"
+          class="username-input"
+          placeholder="Enter Username"
+        />
+      </div>
+
+      <div>
+        <h3>Password</h3>
+        <input
+          type="text"
+          class="password-input"
+          placeholder="Enter Password"
+        />
+      </div>
+
+      <button class="login-btn" onclick="onLoginUser()">Login</button>
+    </section>
+
+    <section class="after-log hide">
+      <h1>Welcome <span></span>!</h1>
+      <div class="img-after"></div>
+      <br />
+      <button class="logout-btn" onclick="onLogoutUser()">Log-out</button>
+    </section>
+    <button class="admin-btn hide" onclick="onAdminLogin()">Admin</button>
+
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/user.service.js"></script>
+    <script src="js/user-controller.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

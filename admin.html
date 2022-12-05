@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body onload="init()">
+
+    <h1>Hi <span></span></h1>
+ 
+    <select  value="sort by" onchange="onSetSort(this.value)">
+        <option value="id">sort by</option>
+        <option value="last-login">last-login</option>
+        <option value="name">name</option>
+    </select>
+
+    <select onchange="onSetFilter(this.value)">
+        <option value="TABLE">table</option>
+        <option value="CARDS">cards</option>
+    </select>
+
+    <div class="users-table"></div>
+
+    <button class="logout-button"onclick="onLogoutAdmin()">Log-out</button>
+
+ 
+
+
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/user.service.js"></script>
+    <script src="js/services/admin.service.js"></script>
+    <script>
+        const user = loadFromStorage('currLoggenInUser')
+        // console.log(user.isAdmin);
+        if (!user) {
+            console.log(user);
+            window.location = 'index.html'
+        }
+        if(!user.isAdmin){
+            window.location = 'index.html'
+        }
+       
+    </script>
+
+    
+    <script src="js/admin-controller.js"></script>
+
+ 
+</body>
+</html>
+

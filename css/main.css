@@ -1,0 +1,103 @@
+body {
+
+    background-image: url('/img/purplebackground.jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.sign-in-img{
+    width: 10vw;
+}
+
+.login-btn, .logout-btn, .admin-btn, .logout-button{
+    
+  background-color: rgb(210, 212, 170); 
+  margin: 15px;
+  border-radius: 10px;
+  width: 25vw;
+  height: 8vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.login-btn:hover, .logout-btn:hover, .admin-btn:hover, .logout-button:hover{
+    cursor: pointer;
+    background-color: rgb(120, 138, 55); 
+}
+
+.login-section{
+    display: block
+}
+
+.after-log{
+    display: none;
+}
+
+.signned-up-img{
+    width: 40%;
+    height: 40%;
+}
+
+.hide{
+    display: none;
+}
+
+.users-table table, td, th{
+    background-color: rgb(70, 223, 215);
+    border-collapse: collapse;
+    padding: 15px;
+    margin: 50px auto;
+}
+
+.cards-content{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+    height: 50%;
+    margin: 10vw ;
+    justify-content: center;
+
+}
+
+.cards-content .person{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-size: contain;
+    background-color: #C9CCD5;
+    margin: 10px;
+    
+}
+
+.cards-present{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+    height: 50%;
+    margin: 10vw ;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.card{
+    width: 150px;
+    height: 150px;
+    background-color: #C9CCD5;
+    margin: 30px 10px;
+    border: 1px solid grey;
+    display: inline-block;
+    
+}
+
